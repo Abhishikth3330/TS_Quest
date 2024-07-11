@@ -1,0 +1,34 @@
+Today, 11th July, 2024:
+    I have started to code in JavaScript and TypeScript.
+    TypeScript is a Superset of JavaScript.
+    Well we are also familiar with JavaScript, so JavaScript is a dynamic language.
+    TypeScript is a Static language
+    What this means is that, in simple terms you don't need to run the entire file (written in JavaScript) to find out bugs and errors, If you code in TypeScript you'll figure out the error while you are writing the code
+
+    I have been following a tutorial on TypeScript from FreeCodeCamp Youtube Channel.
+    link : https://www.youtube.com/watch?v=SpwzRDUQ1GI&t=443s&ab_channel=freeCodeCamp.org
+    Title : Learn TypeScript - Full Course for Beginners
+    Author : Bob Ziroll
+
+    What did i do today ?
+    Well, I wrote the code in JavaScript.
+    The code was about creating a pizza shop, having a menu, and some functions that allows you to keep a track of price and whether the order is prepared or completed.
+    You can also add more pizza's to the list of menu with the price
+
+    And as expected the code had Bugs and Errors.
+    So there are ways to run a JavaScript File, So i did try:
+        Command Prompt :
+            index.js
+        Powershell :
+            node .\index.js
+        JavaScript Debugger:
+            index.js
+        
+    But to make our lives more eassier, I have installed an extension called code runner:
+        So just hit the triangle icon and the code runs.
+    
+    Well there were so many errors as expected, because JavaScript didn't tell me about the errors while i was writing the code. So when the changes are pushed in prodction the app might crash because the error was not known untill it was run.
+
+    So i copied the code from index.js to index.ts and i checked the file was all about words with red underlines highlighting the errors.
+
+    This is going to save out time when we write code in TypeScript.
