@@ -32,3 +32,8 @@ Today, 11th July, 2024:
     So i copied the code from index.js to index.ts and i checked the file was all about words with red underlines highlighting the errors.
 
     This is going to save out time when we write code in TypeScript.
+
+15 July 2024
+    i learned that we have to mention the datatype of the variable in TypeScript
+    and we can not assign values of a variable of one type to a value of another type, example if the variable contains an integer so we can not use the same variable for strings
+    
