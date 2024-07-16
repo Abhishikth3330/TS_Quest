@@ -37,3 +37,22 @@ Today, 11th July, 2024:
     i learned that we have to mention the datatype of the variable in TypeScript
     and we can not assign values of a variable of one type to a value of another type, example if the variable contains an integer so we can not use the same variable for strings
     
+
+16 July, 2024
+    Today i learned about the custom object types that we can create in TypeScript
+    we can use the 'type' keyword to create an object of our type and then we can put in the variable names with their data types
+    and the best feature is that we can nest them inside each-other (nested object types)
+
+    you can create a variable and then specify that it belongs to the custom object type that you have created, this will give all the properties of the custom object to our varible.
+
+    also at any point if you geel that you want one of the features to be optional you can use '?' this mark to mark that part as optional (check the nested_Obj_Types.ts)
+
+    ans we all know that we can configure VS code according to our need and in some way we can run the Typescript files directly without creating a '*.js' file.
+
+    But for now we'll stick with the commands
+        1. tsc file.ts
+            this will create the javascript version
+        2. node file.js
+            this will run the javascript version of the file
+    
+    

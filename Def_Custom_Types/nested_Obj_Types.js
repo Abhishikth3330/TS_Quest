@@ -8,34 +8,15 @@
 //         country: string
 //     }
 // }
-
-type Address = {
-    street: string
-    city: string
-    country: string
-}
-
-// you can clearly see that the address Type is nested inside the Person Type
-
-type Person = {
-    name: string
-    age: number
-    isStudent: boolean
-    address?: Address
-}
-
 // you can ease your code by adding a '?' so that the property gets optional
 // other it gets strict that it need the value for the variable
-
-
 // now i don't have address for the person1
-let person1: Person = {
+var person1 = {
     name: "Joe",
     age: 42,
     isStudent: true,
-}
-
-let person2: Person = {
+};
+var person2 = {
     name: "Jill",
     age: 66,
     isStudent: false,
@@ -44,11 +25,9 @@ let person2: Person = {
         city: "Anytown",
         country: "USA"
     }
-}
-
-
+};
 function displayInfo(person) {
-    console.log(`${person.name} lives at ${person.address?.street}`)
+    var _a;
+    console.log("".concat(person.name, " lives at ").concat((_a = person.address) === null || _a === void 0 ? void 0 : _a.street));
 }
-
-displayInfo(person2)
+displayInfo(person2);
