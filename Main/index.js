@@ -6,7 +6,7 @@ var menu = [
 ];
 var cashInRegister = 100;
 var nextOrderId = 1;
-var orderQueue = [];
+var orderHistory = [];
 function addNewPizza(pizzaObj) {
     menu.push(pizzaObj);
 }
@@ -18,11 +18,15 @@ function placeOrder(pizzaName) {
     }
     cashInRegister += selectedPizza.price;
     var newOrder = { id: nextOrderId++, pizza: selectedPizza, status: "ordered" };
-    orderQueue.push(newOrder);
+    orderHistory.push(newOrder);
     return newOrder;
 }
 function completeOrder(orderId) {
-    var order = orderQueue.find(function (order) { return order.id === orderId; });
+    var order = orderHistory.find(function (order) { return order.id === orderId; });
+    if (!order) {
+        console.error("".concat(orderId, " was not found in the orderQueue"));
+        return;
+    }
     order.status = "completed";
     return order;
 }
@@ -33,4 +37,4 @@ placeOrder("Chicken Bacon Ranch");
 completeOrder(1);
 console.log("Menu:", menu);
 console.log("Cash in register:", cashInRegister);
-console.log("Order queue:", orderQueue);
+console.log("Order queue:", orderHistory);
